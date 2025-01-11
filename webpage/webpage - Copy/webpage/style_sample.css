@@ -1,0 +1,13 @@
+.gradient-text {
+    background: linear-gradient(90deg, #00BFFF 10%, #32CD32 50%, #008B8B 70%);/*linear-gradient(90deg, #00BFFF, #39B54A, #2E8B57);  /*linear-gradient(90deg, #007A8C, #39B54A); /*linear-gradient(90deg, #007A8C, #002A32);/*linear-gradient(90deg, #009B9F, #005B5B); /* linear-gradient(90deg, #007C92, #004D4D); /*linear-gradient(90deg, #00FFFF, #008080); /*linear-gradient(90deg, #00BFFF, #008080); /*linear-gradient(90deg, #00BFFF, #32CD32); /*linear-gradient(90deg, #00C9A7 20%, #FFD700 50%, #007FFF 80%); /*linear-gradient(90deg, #00d4ff 20%, #00ff88 50%, #0072ff 80%); linear-gradient(90deg, #00f0ff 20%, #28a745 50%, #004e92 80%); linear-gradient(90deg, #00c6ff 30%, #0072ff 70%, #00d29e 100%); linear-gradient(90deg, #ff8a00 30%, #e52e71 70%); linear-gradient(90deg, #00C9FF 30%, #00B09B 70%); linear-gradient(90deg, #00C9FF 20%, #92FE9D 80%);  linear-gradient(to left, #f06b6b, #f79f5d);*/
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	    font-weight: bold;
+    color: transparent;
+   display: inline-block;  /*Ensure text does not stretch across the container*/ 
+ overflow: hidden; /* Hide the overflow */
+    white-space: nowrap; /* Prevent line break */
+    width: 0; /* Start with no width */
+    transition: width 0.5s ease; /* Smooth transition */
+}

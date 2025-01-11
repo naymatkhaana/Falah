@@ -1,0 +1,223 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body{
+	display: flex;
+	flex-direction: column;
+	margin:0;
+	height: 100vh;
+}
+
+
+.header{
+	
+	width: 100%;
+	height: 40vh;
+	background-color: gray;
+	top: 5%;
+	left: 0;
+    position: fixed;
+	background-image: url('img/banner.jpg');
+    background-size: cover; /* Or use 'contain' or '100% 100%' */
+    background-position: center;
+}
+
+
+.main{
+	display: flex;
+	height: 60%;
+	width: 100%;
+	margin-top: 40vh;
+    background-color: pink;
+	position:relative;
+	overflow-y: auto;
+}
+
+.sidebar{
+	
+	width: 20%;
+	height: 100%;
+	background-color: #589A8D; /*#BDE038;*/
+	position: fixed;
+	color: white;
+}
+
+.contents{
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin-left: 20%;
+	height: 100%;
+}
+
+ 
+.content{
+	
+	width: 100%;
+	
+	background-color: white;
+	padding-left: 2%;
+}
+.content2{
+	
+	width: 100%;
+	
+	background-color: white; /*#FFFAF0; /*#F2DCE2 #FFECD5 "#E0B0FF" antique white#FAEBD7;  floral white #FFFAF0; misty rose: #ffe4e1; Light Gray: #f5f5f5 , Pale Blue: #e0f7fa , Ivory: #fffff0 , Mint Cream: #f5fffa , Alice Blue: #f0f8ff */
+	padding-left: 2%;
+}
+
+
+.button {
+    text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.0rem;
+}
+
+.button a {
+	font-weight: 700;
+    display: block;
+    padding: 10%;
+    color: white;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: white;
+	color: #589A8D;
+}
+
+
+.contents {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+.contents p {
+    font-size: 1.125rem; /* Medium size text */
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+}
+
+
+.contents h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.contents h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.25rem;
+}
+
+.contents h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.contents h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.contents h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.contents h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+
+.project {
+    /*border: 1px solid #ccc;*/
+	margin-top: 4%;
+}
+
+.project-header {
+    display: flex;
+	align-items: flex-start;
+}
+
+.project-image {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+/*.footer-icons {
+    bottom: 15px;
+    left: 15px;
+	display: flex;
+	
+    flex-direction: row;
+}*/
+.footer-icons {
+	display: flex;
+	margin-top: 28%;
+    flex-direction: row;
+}
+
+.footer-icons a {
+    color: white; /* Light sea green color */
+    text-decoration: none;
+    font-size: 1.5rem;
+	width: 10%;
+}
+
+.footer-icons a:hover {
+    color: lightseagreen; /* Darker shade for hover effect */
+}
+.ficon {
+    width: 80%;
+
+}

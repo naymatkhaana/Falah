@@ -1,0 +1,197 @@
+BISMILLAH-IR-RAHMAN-IR-RAHEEM بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Webpage</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+ <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+
+
+<body>
+
+<div class="header"></div>
+
+<div class="main">
+
+	<div class="sidebar">
+	
+        <div class="button"><a href="#content11">About</a></div>
+        <div class="button"><a href="#content2">Coursework</a></div>
+        <div class="button"><a href="#content3">Projects</a></div>
+        <div class="button"><a href="#content4">Thesis</a></div>
+	
+	
+		<div class="footer-icons">
+			<a href="mailto:example@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+			<a href="https://scholar.google.com/citations?user=YOUR_USER_ID" aria-label="Google Scholar" target="_blank" class="scholar-icon">
+                <img src="https://cdn.simpleicons.org/googlescholar/ffffff" alt="Google Scholar Icon" class="ficon">
+            </a>
+			<a href="https://github.com/username" target="_blank"><img class="ficon" src="img/github.png" alt="GitHub"></a>
+
+		</div>
+			
+	</div>
+
+	<div class="contents">
+		
+		<div class="content" id="content11">
+		<p>This is content</p>
+		</div>
+
+
+		<div class="content2" id="content2">
+		<p>This is content 2</p>
+		</div>
+
+		<div class="content"  id="content3">
+			<h4>Projects </h4>
+			<!--<div class="project">
+				<div class="project-header">
+					<img src="path_to_image.jpg" alt="Project Image" class="project-image">
+					<div class="project-info">
+						<span class="project-name">Survey of Deep Learning and Foundation Models for Time
+ Series Forecasting</span>
+						<div class="project-links">
+							<a href="https://arxiv.org/pdf/2401.13912" target="_blank">Paper</a>
+							<a href="https://arxiv.org/abs/2401.13912" target="_blank">arxiv</a>
+						</div>
+					</div>
+				</div>
+			</div> !-->
+			<div id="projects-container"></div>
+			<div id="projects-container2"></div>
+		
+		</div>
+
+		<div class="content2"  id="content4">
+		<p>This is content 2</p>
+		</div>
+
+<!--
+		<div class="content">
+		<p>This is content</p>
+		</div>
+
+
+		<div class="content2">
+		<p>This is content 2</p>
+		</div>
+
+		<div class="content">
+		<p>This is content </p>
+		</div>
+
+		<div class="content2">
+		<p>This is content 2</p>
+		</div>
+
+		<div class="content" >
+		<p>This is content</p>
+		</div>
+
+
+		<div class="content2">
+		<p>This is content 2</p>
+		</div>
+
+		<div class="content">
+		<p>This is content </p>
+		</div>
+
+		<div class="content2" >
+		<p>This is content 2</p>
+		</div>
+		!-->
+		
+	</div> 
+
+</div>
+
+
+
+</body>
+    <script>
+        // Function to fetch and convert Markdown content
+        async function loadMarkdown(markdownFile, divId) {
+            try {
+                const response = await fetch(markdownFile); 
+                const markdownContent = await response.text();
+                const htmlContent = marked.parse(markdownContent);
+                document.getElementById(divId).innerHTML = htmlContent;
+            } catch (error) {
+                console.error('Error fetching or parsing Markdown file:', error);
+            }
+        }
+		
+		
+				
+		async function createProjectDiv(divId, projectName, imagePath, paperLink ) {
+			const container = document.getElementById(divId);
+			
+			// Create project div
+			const projectDiv = document.createElement('div');
+			projectDiv.classList.add('project');
+
+			// Create project header div
+			const projectHeaderDiv = document.createElement('div');
+			projectHeaderDiv.classList.add('project-header');
+
+			// Create image element
+			const img = document.createElement('img');
+			img.src = imagePath;
+			img.alt = 'Project Image';
+			img.classList.add('project-image');
+
+			// Create project info div
+			const projectInfoDiv = document.createElement('div');
+			projectInfoDiv.classList.add('project-info');
+
+			// Create project name span
+			const projectNameSpan = document.createElement('span');
+			projectNameSpan.classList.add('project-name');
+			projectNameSpan.textContent = projectName;
+
+			// Create project links div
+			const projectLinksDiv = document.createElement('div');
+			projectLinksDiv.classList.add('project-links');
+
+
+			// Create paper link
+			const paperAnchor = document.createElement('a');
+			paperAnchor.href = paperLink;
+			paperAnchor.target = '_blank';
+			paperAnchor.textContent = 'Paper';
+
+
+
+			// Append elements
+			projectLinksDiv.appendChild(paperAnchor);
+			projectInfoDiv.appendChild(projectNameSpan);
+			projectInfoDiv.appendChild(projectLinksDiv);
+			projectHeaderDiv.appendChild(img);
+			projectHeaderDiv.appendChild(projectInfoDiv);
+			projectDiv.appendChild(projectHeaderDiv);
+			container.appendChild(projectDiv);
+		}
+
+		// Example usage
+		createProjectDiv('projects-container','Survey of Deep Learning and Foundation Models for Time Series Forecasting', 'img/project_survey.png',  'https://arxiv.org/pdf/2401.13912');
+		//createProjectDiv('projects-container2','Project Name', 'path_to_image.jpg',  'https://link_to_paper.com');
+
+        // Call the function to load the Markdown content
+        loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/projects.md','content2');
+        loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/about.md','content11');        
+        loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/thesis2.md','content4');
+    </script>
+
+
+</html>
