@@ -5,7 +5,7 @@
 - (CSCI 6470) Database management systems
 
 ###### Intermediate courses - 6000 level                  
-- (CSCI 6530) Introduction to ROS               
+- (CSCI 6530) Introduction to Robotics Operating Sysytem (ROS)               
 - (CSCI 6900) Special topics (reinforcement learning)
 - (CSCI 6850) Biomedical imaging
 - (CSCI 6900) Special topics (computer vision) 
