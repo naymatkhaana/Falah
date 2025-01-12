@@ -12,8 +12,8 @@
   
 ###### Advanced courses - 8000 level
 - (CSCI 8945) Advanced representation learning  
-- (CSCI 8920) Desicion theory    
+- (CSCI 8920) Desicion making under uncertainity    
 - (CSCI 8860) Biomedical information systems    
 - (CSCI 8650) Logic programming                 
-- (CSCI 8965) IoT security                      
+- (CSCI 8965) Internet of Things security                      
 - (CSCI 8990) Research seminar
