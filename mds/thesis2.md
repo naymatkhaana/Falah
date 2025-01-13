@@ -16,8 +16,10 @@ Several foundation models like TimeGPT, TimesFM, and others have been pretrained
 Detecting the beginning of a pandemic involves examining time series data and various other data. For example, genetic sequencing, epidemiological surveillance, and behavioral trends. It involves identifying unusual patterns in health metrics such as hospital admissions, or spikes in symptoms reported by patients, especially for respiratory illnesses. Monitoring real-time epidemiological data for signs in specific regions is a critical step. Health systems also analyze environmental, behavioral, and socio-economic factors that may contribute to outbreaks. Effective surveillance often incorporates ways to detect anomalies and predict trends while relying on global reporting networks to identify outbreaks across borders. Communication with healthcare providers and communities further aids in recognizing early warning signs, enabling timely responses.
 
 ###### Summary of issues:
-* Effective channel mixing, e.g., utilizing cross correlation and cross attention
-* What advantages can foundation models/LLMs provide
+* Effective channel mixing, e.g., utilizing cross-correlation and cross-attention.
+* What advantages can foundation models/LLMs provide, based on a literature review and an ablation study?
+* Public Health Challenges and Implications of Viral Diseases
+
 
 
 
