@@ -24,11 +24,14 @@ BISMILLAH-IR-RAHMAN-IR-RAHEEM بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰ
 
 	<div class="sidebar">
 	
-        <div class="button"><a href="#content11">About</a></div>
+        
+		<div class="button"><a href="#content11">About</a></div>
         <div class="button"><a href="#content2">Coursework</a></div>
         <div class="button"><a href="#content3">Projects</a></div>
         <div class="button"><a href="#content4">Thesis</a></div>
-	
+        <div class="button"><a href="#content5">Honors and awards</a></div>	
+        <div class="button"><a href="#content6">Research highlights</a></div>
+
 	
 		<div class="footer-icons">
 			<a href="mailto:example@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
@@ -69,12 +72,23 @@ BISMILLAH-IR-RAHMAN-IR-RAHEEM بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰ
 			</div> !-->
 			<div id="projects-container"></div>
 			<div id="projects-container2"></div>
+			<div id="projects-container3"></div>
 		
 		</div>
 
 		<div class="content2"  id="content4">
 		<p>This is content 2</p>
 		</div>
+		
+	    <div class="content"  id="content5">
+		<p>This is content</p>
+		</div>
+
+		<div class="content2"  id="content6">
+		<p>This is content 2</p>
+		</div>
+
+
 
 <!--
 		<div class="content">
@@ -184,13 +198,21 @@ BISMILLAH-IR-RAHMAN-IR-RAHEEM بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰ
 		}
 
 		// Example usage
+
 		createProjectDiv('projects-container','Survey of Deep Learning and Foundation Models for Time Series Forecasting', 'img/project_survey.png',  'https://arxiv.org/pdf/2401.13912');
+		createProjectDiv('projects-container2','LLM4cast: Repurposed LLM for Viral Disease Forecasting', 'img/project_icbd2024.png',  'https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10826009');
+		createProjectDiv('projects-container3','Adapting Retrieval Augmented Fine Tuning (RAFT) in a Channel Dependent Multivariate Time Series Foundation Model (work in progress)',  'img/project_icbd2024.png',  '/#'); // 'img/project_icbd2024_dyn.gif',  '/#');
+
 		//createProjectDiv('projects-container2','Project Name', 'path_to_image.jpg',  'https://link_to_paper.com');
 
         // Call the function to load the Markdown content
         loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/projects.md','content2');
         loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/about.md','content11');        
         loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/thesis2.md','content4');
+		       
+        loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/honors_awards.md','content5');
+		       
+        loadMarkdown('https://raw.githubusercontent.com/naymatkhaana/Falah/main/mds/research_highlights.md','content6');
     </script>
 
 
